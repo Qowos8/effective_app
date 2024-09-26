@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@color/background_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/etDigit1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:imeOptions="actionNext"
+        android:importantForAccessibility="no"
+        android:hint="*"
+        android:textColorHint="@color/star_color"
+        android:background="@drawable/auth_shape"/>
+
+    <EditText
+        android:id="@+id/etDigit2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:imeOptions="actionNext"
+        android:importantForAccessibility="no"
+        android:background="@drawable/auth_shape"
+        android:hint="*"
+        android:textColorHint="@color/star_color"
+        android:layout_marginStart="8dp"/>
+
+    <EditText
+        android:id="@+id/etDigit3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:imeOptions="actionNext"
+        android:importantForAccessibility="no"
+        android:background="@drawable/auth_shape"
+        android:hint="*"
+        android:textColorHint="@color/star_color"
+        android:layout_marginStart="8dp"/>
+
+    <EditText
+        android:id="@+id/etDigit4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:imeOptions="actionNone"
+        android:importantForAccessibility="no"
+        android:hint="*"
+        android:textColorHint="@color/star_color"
+        android:background="@drawable/auth_shape"
+        android:layout_marginStart="8dp"/>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_shape"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="22dp"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/card_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сейчас просматривает"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reading_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toEndOf="@id/card_label"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="человек"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toEndOf="@id/reading_count"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/auth_block_color"
+        android:src="@drawable/heart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/job_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reading_count"
+        tools:text="UI/UX Designer" />
+
+    <TextView
+        android:id="@+id/location_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/job_name"
+        tools:text="Минск" />
+
+    <TextView
+        android:id="@+id/company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location_name"
+        tools:text="Мобирикс" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/icon"
+        app:layout_constraintBottom_toBottomOf="@id/company_name"
+        app:layout_constraintStart_toEndOf="@id/company_name"
+        app:layout_constraintTop_toTopOf="@id/company_name" />
+
+    <ImageView
+        android:id="@+id/chem_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/chem"
+        app:layout_constraintBottom_toBottomOf="@id/experience"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/experience" />
+
+    <TextView
+        android:id="@+id/experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/chem_icon"
+        app:layout_constraintTop_toBottomOf="@id/company_name"
+        tools:text="Опыт от 1 года до 3 лет" />
+
+    <TextView
+        android:id="@+id/date_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/experience"
+        tools:text="Опубликовано" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@id/date_word"
+        app:layout_constraintTop_toTopOf="@id/date_word"
+        tools:text="20 февраля" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:text="Откликнуться"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/date_word"
+        android:layout_marginTop="8dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

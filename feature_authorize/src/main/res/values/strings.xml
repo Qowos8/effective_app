@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint">Электронная почта или телефон</string>
+    <string name="textfield_label">Поиск работы</string>
+    <string name="enter_with_password">Войти с паролем</string>
+    <string name="search_employee">Поиск сотрудников</string>
+    <string name="hardcode_search">Размещение вакансии и доступ к базе резюме</string>
+    <string name="search_button_text">Я ищу сотрудников</string>
+    <string name="continue_button_text">Продолжить</string>
+    <string name="email_label">Отправили код на</string>
+    <string name="next_text_button">Подтвердить</string>
+</resources>

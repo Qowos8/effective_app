@@ -4,26 +4,26 @@
     <item
         android:id="@+id/search"
         android:icon="@drawable/search__2_"
-        android:title="Поиск"
+        android:title="@string/search"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/favorites"
         android:icon="@drawable/heart"
-        android:title="Избранное"
+        android:title="@string/favorites"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/negotiations"
         android:icon="@drawable/mail"
-        android:title="Отклики"
+        android:title="@string/negotiations"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/message"
         android:icon="@drawable/message"
-        android:title="Сообщения"
+        android:title="@string/messages"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/profile"
         android:icon="@drawable/profile__3_"
-        android:title="Профиль"
+        android:title="@string/profile"
         app:showAsAction="ifRoom"/>
 </menu>

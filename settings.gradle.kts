@@ -22,5 +22,6 @@ dependencyResolutionManagement {
 rootProject.name = "Effective_app"
 include(":app")
 include(":core_network")
-include(":core_domain")
-include(":feature_auth")
+include(":core")
+include(":feature_authorize")
+include(":feature_job_list")

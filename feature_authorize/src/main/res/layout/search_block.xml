@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:background="@drawable/auth_shape"
+    android:paddingVertical="24dp"
+    android:paddingHorizontal="16dp">
+
+    <TextView
+        android:id="@+id/label_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_employee"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/search_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hardcode_search"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/label_search"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        />
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/search_button_text"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        app:backgroundTint="@color/search_color"
+        app:layout_constraintCircleRadius="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/search_about"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

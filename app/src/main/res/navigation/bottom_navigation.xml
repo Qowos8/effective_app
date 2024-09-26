@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/auth_fragment">
+
+    <fragment
+        android:id="@+id/auth_fragment"
+        android:name="com.example.feature_authorize.AuthFragment"
+        tools:layout="@layout/fragment_auth" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.effective_app.mock_ui.ProfileFragment"
+        tools:layout="@layout/fragment_profile"
+        />
+    <fragment
+        android:id="@+id/message"
+        android:name="com.example.effective_app.mock_ui.MessageFragment"
+        tools:layout="@layout/fragment_message"
+        />
+    <fragment
+        android:id="@+id/negotiations"
+        android:name="com.example.effective_app.mock_ui.NegotiationsFragment"
+        tools:layout="@layout/fragment_negotiations"
+        />
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.feature_job_list.SearchFragment"
+        tools:layout="@layout/fragment_search"
+        />
+    <fragment
+        android:id="@+id/favorites"
+        android:name="com.example.feature_job_list.FavoriteFragment"
+        tools:layout="@layout/fragment_favorite_list"
+        />
+</navigation>

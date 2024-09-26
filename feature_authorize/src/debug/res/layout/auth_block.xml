@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:background="@drawable/auth_shape"
+    android:paddingVertical="24dp"
+    android:paddingHorizontal="16dp">
+
+    <TextView
+        android:id="@+id/label_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textfield_label"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/hint_color"
+        app:hintEnabled="false"
+        app:boxBackgroundColor="@color/textfield_color"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxStrokeColor="@color/auth_block_color"
+        app:cursorColor="@color/white"
+        app:hintTextColor="@color/hint_color"
+        app:layout_constraintTop_toBottomOf="@+id/label_auth"
+        app:startIconDrawable="@drawable/mail"
+        app:endIconDrawable="@drawable/baseline_close_24"
+        app:endIconMode="clear_text"
+        app:startIconTint="@color/hint_color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_color" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:text="@string/continue_button_text"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:background="@drawable/button_shape"
+        app:backgroundTint="@color/continue_color"
+        app:layout_constraintCircleRadius="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/input_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_with_password"
+        app:layout_constraintTop_toTopOf="@id/continue_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/continue_color"
+        app:layout_constraintBottom_toBottomOf="@id/continue_button"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
